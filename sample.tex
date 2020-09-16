@@ -1,0 +1,371 @@
+% プロジェクト学習中間報告書書式テンプレート ver.1.0 (iso-2022-jp)
+
+% 両面印刷する場合は `openany' を削除する
+\documentclass[openany,11pt,papersize]{jsbook}
+
+% 報告書提出用スタイルファイル
+%\usepackage[final]{funpro}%最終報告書
+\usepackage[middle]{funpro}%中間報告書
+
+% 画像ファイル (EPS, EPDF, PNG) を読み込むために
+\usepackage[dvipdfm]{graphicx}
+
+ \def\hissu{\bgroup\color{red}}
+ \def\endhissu{\egroup}
+
+
+% ここから -->
+%\usepackage{calc,ifthen}
+%\newcounter{hoge}
+%\newcommand{\fake}[1]{\whiledo{\thehoge<70}{#1\stepcounter{hoge}}%
+%  \setcounter{hoge}{0}}
+% <-- ここまで 削除してもよい
+
+% 年度の指定
+\thisYear{2004}
+
+% プロジェクト名
+\jProjectName{函館版おいしいカレーの作り方プロジェクト}
+
+% [簡易版のプロジェクト名]{正式なプロジェクト名}
+% 欧文のプロジェクト名が極端に長い（2行を超える）場合は、短い記述を
+% 任意引数として渡す。
+%\eProjectName[Making Delicious curry]{How to make delicious curry of Hakodate}
+\eProjectName{How to make delicious Hakodate curry}
+
+
+% <プロジェクト番号>-<グループ名>
+\ProjectNumber{25-D}
+
+% グループ名
+\jGroupName{グループ~1}
+\eGroupName{Group~1}
+
+% プロジェクトリーダ      注意：　学籍番号不用
+\ProjectLeader{未来花子}{Hanako~Mirai}
+
+% グループリーダ      注意：　学籍番号不用
+\GroupLeader  {未来太郎}{Taro~Mirai}
+
+% メンバー数
+\SumOfMembers{9}
+% グループメンバ      注意：　学籍番号不用
+\GroupMember  {1}{函館太郎}{Taro~Hakodate}
+\GroupMember  {2}{函館花子}{Hanako~Hakodate}
+\GroupMember  {3}{北海太郎}{Taro~Hokkai　}
+\GroupMember  {4}{北海花子}{Hanako~Hokkai}
+\GroupMember  {5}{未来花子}{Hanako~Mirai}
+\GroupMember  {6}{未来一郎}{Ichiro~Mirai}
+\GroupMember  {7}{未来二朗}{Jiro~Mirai　}
+\GroupMember  {8}{未来三郎}{Saburo~Mirai}
+\GroupMember  {9}{未来敬祐}{Keisuke~Mirai}
+
+% 指導教員
+\jadvisor{指導刷蔵,指導刷子,副出刷子,福田刷男}
+% 複数人数いる場合はカンマ(,)で区切る。カンマの前後に空白は入れない。
+\eadvisor{Suruo~Shido,Suruko~Shido,Suruko~Hukude,Suruo~Hukude}
+
+% 論文提出日
+\jdate{2019年6月28日}
+\edate{June~26, 2019}
+
+\begin{document}
+%
+% 表紙
+\maketitle
+
+%前付け
+\frontmatter
+
+% 和文概要
+\begin{jabstract} 日本語の概要を書く。
+% 和文キーワード
+\begin{jkeyword}
+キーワード1, キーワード2, キーワード3, キーワード4, キーワード5
+\end{jkeyword}
+\bunseki{未来太郎}
+\end{jabstract}
+
+%英語の概要
+\begin{eabstract} Abstract in English. 
+% 英文キーワード
+\begin{ekeyword}
+Keyrods1, Keyword2, Keyword3, Keyword4, Keyword5
+\end{ekeyword}
+\bunseki{函館花子}
+\end{eabstract}
+
+\tableofcontents% 目次
+
+
+\mainmatter% 本文のはじまり
+
+\chapter{背景}
+%該当分野の従来の状況、問題点、本プロジェクトで設定した課題、実施した解決策、及び成果を簡潔に記述する。
+
+\bunseki{北海花子}
+
+\section{\midorfin{該当分野の現状と従来例}{前年度の成果}}
+%プロジェクトの分野の状況や、類似プロジェクトがあればその状況を記述する。前年度からの継続課題ならば、前年度の内容も記述する。 
+
+一般にカレーという料理は家庭でよく作られる。これまで多くの人が
+おいしいカレーの作り方について試行錯誤してきている。函館の特産
+品を用いた一般料理が少ない。前年度は、省略。
+\bunseki{北海太郎}
+
+\section{現状における問題点}
+%現状のままでは存在する問題点について、記述する。いわば当プロジェクトの存在意義
+作るたびにカレーの味が変わる。いつもおいしいものができるとは限らない。
+\bunseki{未来花子}
+
+\section{課題の概要}\label{sec:gaiyou}
+% 上述の問題点を解決すべく当プロジェクトの掲げる課題の概要を述べる。
+地域の特色を生かしたおいしいカレーの作り方が課題。
+\bunseki{未来太郎}
+
+
+
+\chapter{到達目標}
+
+\begin{figure}[htbp]
+    \begin{center}
+    \includegraphics[width=3cm]{images/apple.eps}
+    \end{center}
+    \caption{リンゴ}
+    \label{fig:apple}
+\end{figure}
+
+\section{本プロジェクトにおける目的}\label{sec:mokuteki}
+%1.3節で述べた課題をより具体的に記述する。成果に対して必ず満たすべき条件を含む
+
+地域の特色を生かしたおいしいカレーの作り方が課題。
+最終的には、100人中75人以上がおいしいというカレーの詳細なレシピを作ること。
+またそのカレーは函館の海産物を用いたものであること。
+レシピの手順は、なぜその方法がいいのかも含めて記述されていること。
+\bunseki{未来}
+
+\subsection{通常の授業ではなく、プロジェクト学習で行う利点}
+
+本課題では材料に多種多様なものが考えられるが、複数の人数で試作することにより、 
+さまざまなバリエーションが試せる。また、味の好みの偏りが少なくなる。 
+通常の授業では基本的に個人の知識・技術について講義・演習形式で行われるため、 
+共同作業で行うべき作業時間の多いテーマに関しては向かない。
+
+\bunseki{函館}
+
+\subsection{地域との関連性（必要ならば）}
+
+海産物を特徴にしたカレーができると地域の名物料理として売り出せるかも。 
+また函館の特産品の売り上げが伸びるかも。
+
+\bunseki{北海}
+
+
+\section{具体的な手順・課題設定}\label{sec:tejun}
+%2.1節で述べた課題を解決するための小課題を手順に分け、その詳細を記述する。 各人への割り当て可能なレベルまで具体化する。なお、以下を必ず含むこと。 
+%・このような課題設定に至るプロセス　 
+%・各小課題の解決過程に関連する講義 
+%・各小課題の解決過程で用いる既存技術、また習得技術
+
+数多いレシピをもとに効率的に函館特産物を用いたカレーを製作し、コスト面から、 
+試作の数を20種類以内に収める目的で、情報収集に力をいれ、以下のように 
+手順を設定した。
+
+\begin{enumerate}
+\item 従来のカレーレシピ収集（料理本・テレビ・Web)
+\par 課題：レシピを共通する部分と異なる部分にわけ、グループ化する。
+     異なる部分については、それぞれのメリットデメリットを挙げる。　　
+
+\item 函館特産食品の種類の調査
+\par 課題：生産高が多く、一般に特産品として知名度の高いものを調査する。
+           季節・標準的な値段・一般的な調理法とその調理法により引き出
+           せる味の調査をする。　　
+ 　 
+\item 函館特産食品とカレーとの組み合わせを調べる（過去のレシピの検索）
+\par 課題：省略
+ 　　　 
+\item 各材料の下ごしらえのレシピ化。
+\par 課題：省略
+ 　　　 
+\item 試作レシピパターンの決定
+\par 課題：省略
+ 　　　 
+\item 試作
+\par 課題：省略
+ 　　　 
+\item アンケート実施及び解析、改善点の発見
+\par 課題：省略
+
+\item 好評な試作パターンについてのバリエーションを設定。　　　
+\par 課題：省略
+ 　　　 
+\item アンケート実施及び解析、改善点の発見
+（75パーセント以上の好評価を得るまで8-9の繰り返し）
+\par 課題：省略
+\end{enumerate}
+
+\bunseki{未来}
+
+\section{課題の割り当て}
+%2.2節で具体化した各小課題を誰にどのように分担したか、またその理由も含めて記述する。
+
+各人の得意分野及び関連性、時間軸のスケジュールを基準に
+以下のように割り当てた。
+\bunseki{函館}
+
+
+\chapter{課題解決のプロセスの概要}
+2.2節で具体化した各小課題の解決のプロセスの概要を、各々記述する。
+
+\begin{enumerate}
+ \item 従来のカレーレシピ収集（料理本・テレビ・Web) 
+\par 解決過程：添付資料（料理本＊冊・テレビ番組＊本・Web＊種類）から
+     レシピを収集した。 
+\end{enumerate}
+
+
+その後ほぼ共通する部分を抜き出したところ、＊パターンあり、
+それらの特徴的な味の変化は付録＊参照。以下省略。
+\bunseki{北海}
+
+
+
+
+\chapter{課題解決のプロセスの詳細}
+
+\section{各人の課題の概要とプロジェクト内における位置づけ}
+%各人の担当課題の概要と、プロジェクト内における役割・位置づけを記述する。
+
+未来花子の担当課題は以下のとおりである。 
+\begin{description}
+ \item[4月] Webからのレシピ収集・データベース化 。
+ \item[5月] レシピの内容のグループ分け。
+ \item[6月] 特産品＊＊を含むレシピ検索。
+ \item[7--9月]特産品＊＊を含むレシピ考案。
+\end{description}
+
+北海花子の担当課題は以下のとおりである。 
+\begin{description}
+ \item[4月] 草むしり。
+ \item[5月] 畑仕事。
+ \item[6月] 庭弄り。
+\end{description}
+
+\bunseki{未来}
+
+\section{担当課題解決過程の詳細}
+%各人の担当課題の解決過程を詳細に記述する新規習得技術を必ず含むこと。
+
+\subsection{未来太郎}
+\begin{description}
+ \item[4月] Webからのレシピ収集・データベース化 
+Webの検索機能を用いて、レシピを検索した。 
+材料と手順について、データベースを作成した。 
+データベース化には、講義「＊＊」で習得した＊＊の手法を用いた。 
+その際、＊＊の技術を習得した。　　
+ \item[5月]まずは草むしりからはじめた。
+\end{description}
+
+\bunseki{未来太郎}
+
+
+\subsection{北海花子}
+
+省略。
+\bunseki{北海花子}
+
+
+\section{担当課題と他の課題の連携内容}
+%各人の担当課題とプロジェクト内の他の課題との連携について記述する。
+
+\subsection{未来花子}
+自分はWebからのレシピ収集を行ったが、そのデータベースは他の分野から収集した https://ja.overleaf.com/project/5f0efd508f2e5f00015c9b4f
+レシピをも入力するものである。データベース構築の際、＊＊の部分を担当した。
+以下略。
+\bunseki{未来花子}
+
+\subsection{北海花子}
+省略。
+\bunseki{北海花子}
+
+
+
+\chapter{結果}
+
+\section{プロジェクトの結果}
+%問題点の解決のために製作・考案したものについて記述する。
+
+地域の特色を生かしたおいしいカレーの詳細なレシピを5パターン作った。 
+それは、以下のとおりである。
+
+\bunseki{未来}
+
+\section{成果の評価}
+%プロジェクト全体の成果について、成果によってどのように上述した課題が解決されたか、成果の効果は当初の想定に沿っているか、残された問題点はあるかを記述する。
+
+成果物のレシピを用いることにより、以下略。
+
+\bunseki{未来花子}
+
+
+
+\section{担当分担課題の評価}
+%各人の担当課題の成果について、成果によってどのように上述した課題が解決されたか、 要求された役割は果たせたか、残された問題点はあるかを記述する。
+
+\subsection{北海花子}
+\begin{description}
+ \item[Webからのレシピ収集・データベース化] 
+  数多くのデータをデータベース化することによって、
+  必要な情報を効率的に検索することができた。 ただし手順・
+  材料のデータの解析方法は＊＊の点でデータが重複して得られることがあり、
+  その点に関しては改善の余地があると考えられる。 
+ \item[ほげほげ]
+  ほげはほげであり、ほげほげである。
+\end{description}
+
+\bunseki{北海花子}
+
+\subsection{北海太郎}
+
+\bunseki{北海太郎}
+
+
+
+\chapter{今後の課題と展望}
+%成果について、今後の展開、改善すべき点などを、それによって期待される効果も含めて記述する。
+
+今回は函館の特産物として＊＊・＊＊を用いたレシピを作成したが、
+季節によっては手に入りにくく、 また高価になるため、たとえば季
+節ごとのレシピ展開が考えられる。 
+
+\bunseki{未来花子}
+
+% 以降、付録(付属資料)であることを示す
+\begin{appendix}
+
+\chapter{新規習得技術}
+%課題解決過程に習得した技術について解説する。
+
+
+\chapter{活用した講義}
+%課題解決過程において活用した講義について、講義名・活用内容を記述する。 
+
+\chapter{相互評価}
+%課題解決過程で分担し、連携した作業全般について、互いに客観的に評価する。 
+
+\chapter{その他製作物}
+%その他成果物をプロジェクトの担当教員の指示に従って添付する。
+
+%付録の終わり
+\end{appendix}
+
+
+%\backmatter
+
+% 参考文献
+\begin{thebibliography}{9}
+ \bibitem {ラベル} 著者名. 書籍名. 出版社,  年号.
+ \bibitem {A2} ほげほげお. うんたらかんたら,  2003.
+\end{thebibliography}
+
+\end{document}
