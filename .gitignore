@@ -1,0 +1,8 @@
+# platex cache files
+*.aux
+*.dvi
+*.pdf
+*.log
+*.toc
+*.synctex.gz
+
